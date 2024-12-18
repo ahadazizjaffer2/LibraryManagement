@@ -18,7 +18,7 @@ The Library Management System is a C# .NET project designed to manage the basic 
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/LibraryManagement.git
+    git clone https://github.com/ahadazizjaffer2/LibraryManagement.git
     ```
 2. Open the solution file in Visual Studio.
 3. Restore the NuGet packages.
