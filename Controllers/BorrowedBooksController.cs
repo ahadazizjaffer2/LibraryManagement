@@ -17,7 +17,7 @@ namespace librarymanagement.Controllers
 
         public BorrowedBooksController(IConfiguration configuration, ILogger<BorrowedBooksController> logger)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration["DATABASE_CONNECTION_STRING"];
             _logger = logger;
         }
 
