@@ -15,7 +15,7 @@ namespace librarymanagement.Controllers
 
         public BooksController(IConfiguration configuration)
         {
-            _connectionString = _configuration["DATABASE_CONNECTION_STRING"];
+            _connectionString = configuration["DATABASE_CONNECTION_STRING"];
         }
 
         [HttpGet]
