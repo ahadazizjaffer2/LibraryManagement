@@ -18,9 +18,11 @@ namespace librarymanagement
 
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add PostgreSQL context (uncomment and configure if needed)
-            // services.AddDbContext<LibraryContext>(options =>
-            //     options.UseNpgsql(_configuration.GetConnectionString("DefaultConnection")));
+
+            var jwtKey = _configuration["JWT_KEY"];
+            var jwtIssuer = _configuration["JWT_ISSUER"];
+            var jwtAudience = _configuration["JWT_AUDIENCE"];
+            var connectionString = _configuration["DATABASE_CONNECTION_STRING"];
 
             // Configure JWT authentication
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
