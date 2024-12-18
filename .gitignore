@@ -1,0 +1,33 @@
+# Ignore appsettings files
+appsettings.json
+appsettings.*.json
+
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore logs
+*.log
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore Rider settings
+.idea/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore publish outputs
+publish/
+
+# Ignore temporary files
+*.tmp
+*.temp
