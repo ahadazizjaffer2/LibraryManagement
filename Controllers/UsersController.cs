@@ -17,7 +17,7 @@ namespace librarymanagement.Controllers
 
         public UsersController(IConfiguration configuration, ILogger<UsersController> logger)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration["DATABASE_CONNECTION_STRING"];
             _logger = logger;
         }
 
