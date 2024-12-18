@@ -22,7 +22,7 @@ namespace librarymanagement.Controllers
         public AuthController(IConfiguration configuration, ILogger<AuthController> logger)
         {
             _configuration = configuration;
-            _connectionString = _configuration.GetConnectionString("DefaultConnection");
+            _connectionString = _configuration["DATABASE_CONNECTION_STRING"];
             _logger = logger;
         }
 
