@@ -34,10 +34,10 @@ namespace librarymanagement
                         ValidateAudience = true,
                         ValidateLifetime = true,
                         ValidateIssuerSigningKey = true,
-                        ValidIssuer = _configuration["Jwt:Issuer"],
-                        ValidAudience = _configuration["Jwt:Audience"],
+                        ValidIssuer = jwtIssuer,
+                        ValidAudience = jwtAudience,
                         IssuerSigningKey = new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(_configuration["Jwt:Key"])
+                            Encoding.UTF8.GetBytes(jwtKey)
                         )
                     };
                 });
