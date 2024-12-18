@@ -9,7 +9,7 @@ namespace librarymanagement
 {
     public class Startup
     {
-        private readonly IConfiguration _configuration;
+        public IConfiguration _configuration { get; }
 
         public Startup(IConfiguration configuration)
         {
